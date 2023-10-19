@@ -1,5 +1,5 @@
-#ifndef __PCL_MAP_H__
-#define __PCL_MAP_H__
+#ifndef __SPHEREMAP_PCL_MAP_H__
+#define __SPHEREMAP_PCL_MAP_H__
 
 #include <vector>
 #include <string.h>

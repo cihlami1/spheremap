@@ -1,8 +1,8 @@
 # SETTINGS FOR SPHEREMAP PLANNING
 # max distance in meters that the start and goal points can be from the spheremap. 
 # This is because the spheremap can sometimes not cover bits of space
-max_graph_dist_for_spheremap_planning: 10 
-spheremap_min_safe_dist: 0.8 # the distance under which planning does not go, and spheres are deleted
+max_graph_dist_for_spheremap_planning: 0.5
+spheremap_min_safe_dist: 0.3 # the distance under which planning does not go, and spheres are deleted
 spheremap_fully_safe_dist: 3 # the distance after which no penalty is added to sphere-sphere transition due to being risky
 spheremap_planning_safety_weight: 50 # weight for the safety cost between spheres in planning, as epsilon in the paper
 
@@ -19,8 +19,8 @@ rate_topology_msg_buffer_emptying: 10
 enable_ltvmap_markers_sending: true
 
 # SETTINGS OF SPHEREMAP UPDATING IN GENERAL
-spheremap_update_box_size: 70 # in meters, side length of update boundingbox
-spheremap_update_box_size_hires: 40 # in meters, side length of update boundingbox if octomap resolution < 0.18m
+spheremap_update_box_size: 1000 # 70 # in meters, side length of update boundingbox
+spheremap_update_box_size_hires: 1000 # 40 # in meters, side length of update boundingbox if octomap resolution < 0.18m
 
 # SETTINGS OF SPHEREMAP INCREMENTAL SEGMENTATION
 # you can play around with it, but these were found to be good for the incremental segmentation of SphereMap

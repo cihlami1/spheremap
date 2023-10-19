@@ -1,12 +1,12 @@
 <launch>
 
-  <arg name="namespace" default="" />
+  <arg name="namespace" default="$(env UAV_NAME)" />
 
-  <arg name="topic_odom_in" default="" />
-  <arg name="topic_octomap_binary_in" default="" />
+  <arg name="topic_odom_in" default="estimation_manager/odom_main" />
+  <arg name="topic_octomap_binary_in" default="clroctree_to_octree/merged_octomap/normal" />
 
   <arg name="baselink_frame" default="$(arg namespace)/fcu"/>
-  <arg name="map_frame" default="$(arg namespace)/stable_origin"/>
+  <arg name="map_frame" default="$(arg namespace)/mapping_origin"/>
 
   <group ns="$(arg namespace)">
 
